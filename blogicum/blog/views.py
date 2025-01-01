@@ -49,7 +49,7 @@ def index(request):
     return render(request, 'blog/index.html', {'posts': posts[::-1]})
 
 
-def post_detail(request, pk):
+def post_detail(request, id):
     result_post = None
     for post in posts:
         if post['id'] == id:
